@@ -19,5 +19,11 @@ class ProductManager:
         print(f'Total value: {total:.2f} Euros')
         return total
     
+    def remove_product_by_name(self, name):
+        self.products = [p for p in self.products if p.name != name]
+
+        
+        
+    
 
             
